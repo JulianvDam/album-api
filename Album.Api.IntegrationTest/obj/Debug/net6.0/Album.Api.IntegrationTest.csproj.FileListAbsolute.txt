@@ -1,0 +1,7 @@
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\Album.Api.IntegrationTest.csproj.AssemblyReference.cache
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\Album.Api.IntegrationTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\Album.Api.IntegrationTest.AssemblyInfoInputs.cache
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\Album.Api.IntegrationTest.AssemblyInfo.cs
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\Album.Api.IntegrationTest.csproj.CoreCompileInputs.cache
+C:\Users\jdam3\Documents\GitHub\album-api\album.api.integrationtest\obj\Debug\net6.0\MvcTestingAppManifest.json

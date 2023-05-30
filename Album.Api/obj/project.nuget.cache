@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "7ZqE0M8K5Mz/VB8JuKPKOyMqSwx6uDDVUiy/GW5RA5TUj3zNFG1h2rYU0ObNnZVMjUy/uHgsutIETawnC8eSpQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\Album.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jdam3\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\jdam3\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\jdam3\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\jdam3\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\jdam3\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\jdam3\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
