@@ -17,15 +17,15 @@ jobs:
         with:
           dotnet-version: 6.0.x
 
-  Album-Api:
+  AlbumApi:
     needs: build
     runs-on: ubuntu-latest
 
     steps:
       - name: Restore dependencies
-        run: dotnet restore Album.Api/Album.Api.csproj
+        run: dotnet restore /Album.Api/Album.Api.csproj
       - name: Build
-        run: dotnet build ./Album.Api.csproj --no-restore
+        run: dotnet build /Album.Api/Album.Api.csproj --no-restore
 
   Album-Api-Tests:
     needs: build
