@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TI7bllkD39vP4mRMfdf2iJZa7GogfRBs8j/bs/dKb02XnRXOBVPDTLVXtjknbrxcmSvogL3QT6p+DHY3Z0qQBw==",
+  "dgSpecHash": "RO3A5WBkDjkfr/6RskG927Mn6iqvcsUpb7auoQLhipTeVIiCHRtk/UmCvo1Mr1CraJSsuy52HW6U66zTi1KtiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\Album.Api.IntegrationTest.csproj",
+  "projectFilePath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\Album.Api.IntegrationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jdam3\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\jdam3\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\6.0.0\\microsoft.aspnetcore.mvc.testing.6.0.0.nupkg.sha512",

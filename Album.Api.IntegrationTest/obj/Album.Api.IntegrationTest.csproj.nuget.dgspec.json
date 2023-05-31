@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\Album.Api.IntegrationTest.csproj": {}
+    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\Album.Api.IntegrationTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\Album.Api.IntegrationTest.csproj": {
+    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\Album.Api.IntegrationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\Album.Api.IntegrationTest.csproj",
+        "projectUniqueName": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\Album.Api.IntegrationTest.csproj",
         "projectName": "Album.Api.IntegrationTest",
-        "projectPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\Album.Api.IntegrationTest.csproj",
+        "projectPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\Album.Api.IntegrationTest.csproj",
         "packagesPath": "C:\\Users\\jdam3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api.integrationtest\\obj\\",
+        "outputPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api.Integrationtest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jdam3\\AppData\\Roaming\\NuGet\\NuGet.Config",
