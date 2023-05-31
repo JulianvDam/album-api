@@ -17,7 +17,7 @@ jobs:
         with:
           dotnet-version: 6.0.x
 
-  Album.Api:
+  Album-Api:
     needs: build
     runs-on: ubuntu-latest
 
@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: dotnet build Album.Api/Album.Api.csproj --no-restore
 
-  Album.Api.Tests:
+  Album-Api-Tests:
     needs: build
     runs-on: ubuntu-latest
 
@@ -39,7 +39,7 @@ jobs:
       - name: Test
         run: dotnet test Album.Api.Tests/Album.Api.Tests.csproj --no-build --verbosity normal
 
-  Album.Api.IntegrationTest:
+  Album-Api-IntegrationTest:
     needs: build
     runs-on: ubuntu-latest
 
