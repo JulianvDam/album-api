@@ -11,42 +11,60 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.x
+          dotnet-version: '6.0.x'
 
-  AlbumApi:
-    needs: build
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build solution
+        run: dotnet build --configuration Release
+
+  unit-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Restore dependencies
-        run: dotnet restore /Album.Api/Album.Api.csproj
-      - name: Build
-        run: dotnet build /Album.Api/Album.Api.csproj --no-restore
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-  Album-Api-Tests:
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build solution
+        run: dotnet build --configuration Release
+
+      - name: Run unit tests
+        run: dotnet test --configuration Release --no-build --filter FullyQualifiedName~Album.Api.Test
+
+  integration-tests:
     needs: build
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Restore dependencies
-        run: dotnet restore Album.Api.Tests/Album.Api.Tests.csproj
-      - name: Build
-        run: dotnet build Album.Api.Tests/Album.Api.Tests.csproj --no-restore
-      - name: Test
-        run: dotnet test Album.Api.Tests/Album.Api.Tests.csproj --no-build --verbosity normal
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-  Album-Api-IntegrationTest:
-    needs: build
-    runs-on: ubuntu-latest
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
 
-    steps:
       - name: Restore dependencies
-        run: dotnet restore Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj
-      - name: Build
-        run: dotnet build Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj --no-restore
-      - name: Test
-        run: dotnet test Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj --no-build --verbosity normal
+        run: dotnet restore
+
+      - name: Build solution
+        run: dotnet build --configuration Release
+
+      - name: Run integration tests
+        run: dotnet test --configuration Release --no-build --filter FullyQualifiedName~Album.Api.IntegrationTest
