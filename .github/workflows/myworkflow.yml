@@ -1,6 +1,3 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
 name: .NET
 
 on:
@@ -11,18 +8,45 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      - uses: actions/checkout@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+  Album.Api:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Restore dependencies
+        run: dotnet restore Album.Api/Album.Api.csproj
+      - name: Build
+        run: dotnet build Album.Api/Album.Api.csproj --no-restore
+
+  Album.Api.Tests:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Restore dependencies
+        run: dotnet restore Album.Api.Tests/Album.Api.Tests.csproj
+      - name: Build
+        run: dotnet build Album.Api.Tests/Album.Api.Tests.csproj --no-restore
+      - name: Test
+        run: dotnet test Album.Api.Tests/Album.Api.Tests.csproj --no-build --verbosity normal
+
+  Album.Api.IntegrationTest:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Restore dependencies
+        run: dotnet restore Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj
+      - name: Build
+        run: dotnet build Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj --no-restore
+      - name: Test
+        run: dotnet test Album.Api.IntegrationTest/Album.Api.IntegrationTest.csproj --no-build --verbosity normal
