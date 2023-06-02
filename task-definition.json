@@ -103,7 +103,6 @@
         "value": null,
         "name": "ecs.capability.task-eni"
       }
-    ],
     "pidMode": null,
     "requiresCompatibilities": [
       "FARGATE"
