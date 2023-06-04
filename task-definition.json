@@ -1,9 +1,9 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:716882742183:task-definition/AlbumTaskDefinition:3",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:716882742183:task-definition/AlbumTaskDefinition:5",
   "containerDefinitions": [
       {
           "name": "AlbumContainer",
-          "image": "716882742183.dkr.ecr.us-east-1.amazonaws.com/cnsd/album:14",
+          "image": "716882742183.dkr.ecr.us-east-1.amazonaws.com/cnsd/album:17",
           "cpu": 0,
           "portMappings": [
               {
@@ -30,7 +30,7 @@
   "taskRoleArn": "arn:aws:iam::716882742183:role/LabRole",
   "executionRoleArn": "arn:aws:iam::716882742183:role/LabRole",
   "networkMode": "awsvpc",
-  "revision": 3,
+  "revision": 5,
   "volumes": [],
   "status": "ACTIVE",
   "requiresAttributes": [
@@ -69,7 +69,7 @@
   ],
   "cpu": "256",
   "memory": "512",
-  "registeredAt": "2023-06-02T10:53:46.996Z",
+  "registeredAt": "2023-06-04T11:34:43.263Z",
   "registeredBy": "arn:aws:sts::716882742183:assumed-role/voclabs/user2553719=Julian_van_Dam",
   "tags": []
 }
