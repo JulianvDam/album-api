@@ -18,7 +18,7 @@ public class GreetingService
 
         if (string.IsNullOrWhiteSpace(name))
         {
-            var greeting = $"Hello, World from {hostname}";
+            var greeting = $"Hello, World from {hostname} v2";
             var endTime = DateTime.UtcNow;
             _logger.LogInformation($"GreetingService: returning greeting: {greeting} at {DateTime.UtcNow}. Duration: {endTime-startTime}");
 
@@ -26,7 +26,7 @@ public class GreetingService
         }
         else
         {
-            var greeting = $"Hello, {name} from {hostname}";
+            var greeting = $"Hello, {name} from {hostname} v2";
             var endTime = DateTime.UtcNow;
             _logger.LogInformation($"GreetingService: returning greeting: {greeting} at {DateTime.UtcNow}. Duration: {endTime-startTime}");
 
