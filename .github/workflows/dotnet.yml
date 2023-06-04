@@ -56,6 +56,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: AlbumServiceBlueGreen
+        service: AlbumServiceBlueGreen1
         cluster: AlbumCluster
         wait-for-service-stability: true
