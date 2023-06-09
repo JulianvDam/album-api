@@ -12,7 +12,12 @@
               }
           ],
           "essential": true,
-          "environment": [],
+          "environment": [
+            {
+                "name": "CONNECTIONSTRINGS__DEFAULTCONNECTION",
+                "value": "Server=cnsd-db-716882742183.cuwkdwslmzed.us-east-1.rds.amazonaws.com;Port=5432;Database=albumdatabase;User Id=julian;Password=heelsterkpass;"
+              }
+          ],
           "mountPoints": [],
           "volumesFrom": [],
           "logConfiguration": {

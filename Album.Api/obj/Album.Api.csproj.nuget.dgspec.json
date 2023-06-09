@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\Album.Api.csproj": {}
+    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api\\Album.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\Album.Api.csproj": {
+    "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api\\Album.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectUniqueName": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api\\Album.Api.csproj",
         "projectName": "Album.Api",
-        "projectPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\Album.Api.csproj",
+        "projectPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api\\Album.Api.csproj",
         "packagesPath": "C:\\Users\\jdam3\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\Album.Api\\obj\\",
+        "outputPath": "C:\\Users\\jdam3\\Documents\\GitHub\\album-api\\album.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jdam3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,27 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
