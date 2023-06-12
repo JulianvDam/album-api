@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<GreetingService>();
+builder.Services.AddCors();
 
 var Configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
@@ -29,6 +30,11 @@ builder.Services.AddSwaggerGen(c =>
 
 
 var app = builder.Build();
+
+app.UseCors(policy => policy
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowAnyOrigin());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
