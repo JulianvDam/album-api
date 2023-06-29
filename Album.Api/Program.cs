@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Album.Api.Database;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
