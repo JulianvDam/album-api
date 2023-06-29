@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Album.Api.Database;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +11,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<GreetingService>();
+builder.Services.AddScoped<Album.Api.Services.IAlbumService, Album.Api.Services.AlbumService>();
 builder.Services.AddCors();
 
 var Configuration = new ConfigurationBuilder()
