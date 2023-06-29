@@ -52,6 +52,12 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<Album.Api.Database.albumContext>();
+    DBInitializer.Initialize(dbContext);
+}
+
 app.Run();
 
 public partial class Program { }
