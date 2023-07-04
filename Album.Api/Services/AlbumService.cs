@@ -125,11 +125,6 @@ namespace Album.Api.Controllers
         [SwaggerResponse(StatusCodes.Status404NotFound, "No album found with the specified ID")]
         public async Task<IActionResult> UpdateAlbum(int id, [FromBody] Models.Album album)
         {
-            if (id != album.Id)
-            {
-                return BadRequest();
-            }
-
             var updatedAlbum = await _albumService.UpdateAlbum(id, album);
 
             if (updatedAlbum == null)
