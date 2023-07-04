@@ -12,7 +12,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<GreetingService>();
 builder.Services.AddScoped<Album.Api.Services.IAlbumService, Album.Api.Services.AlbumService>();
-builder.Services.AddCors();
+builder.Services.AddCors(options => {
+        options.AddDefaultPolicy(builder => {
+            builder.AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
+        }); 
+    });
 
 var Configuration = new ConfigurationBuilder()
     .AddJsonFile("appsettings.json")
